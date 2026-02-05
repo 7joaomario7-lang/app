@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>PM.TUNNEL - EDIÇÃO ANGOLA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #f8fafc;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+            overscroll-behavior-y: none;
+        }
+        .jetbrains-mono { font-family: 'JetBrains Mono', monospace; }
+        
+        .rocket-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='500' height='1000' viewBox='0 0 500 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 250,950 C 200,850 300,850 250,750 C 200,650 300,650 250,550 C 200,450 300,450 250,350 L 280,350 C 330,450 230,450 280,550 C 330,650 230,650 280,750 C 330,850 230,850 280,950 Z' fill='%23ffffff' fill-opacity='0.03'/%3E%3Cpath d='M 250 150 L 280 250 L 265 250 L 265 330 L 235 330 L 235 250 L 220 250 Z' fill='%23ffffff' fill-opacity='0.08'/%3E%3Cpath d='M 220 250 L 180 300 L 235 250 Z' fill='%23ffffff' fill-opacity='0.06'/%3E%3Cpath d='M 280 250 L 320 300 L 265 250 Z' fill='%23ffffff' fill-opacity='0.06'/%3E%3Cpath d='M 235 330 C 240 380, 260 380, 265 330 L 250 400 Z' fill='%23ff4444' fill-opacity='0.1'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center 115%;
+            background-size: 80% auto;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .glass {
+            background: rgba(18, 18, 18, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .glow-red {
+            box-shadow: 0 0 30px rgba(220, 38, 38, 0.2);
+        }
+        
+        .glow-gold {
+            box-shadow: 0 0 30px rgba(234, 179, 8, 0.2);
+        }
+
+        @keyframes slide-up {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        
+        @keyframes slide-left {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .animate-slide-up { animation: slide-up 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        .animate-slide-left { animation: slide-left 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        .animate-fade-in { animation: fade-in 0.3s ease-out; }
+
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

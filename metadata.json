@@ -1,0 +1,7 @@
+{
+  "name": "PM.TUNNEl LITE",
+  "description": "The ultimate Android VPN for Angola. High-speed tunneling, SNI optimization, and Unity Ads rewards for free premium access.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
